@@ -1,0 +1,17 @@
+button{
+  padding: 5px;
+  margin: 5px;
+}
+
+.form{
+  display: block;
+  margin: 10px 0;
+}
+
+input{
+  margin-left: 5px;
+  font-size: 18px;
+}
+label{
+  font-size: 20px;
+}
