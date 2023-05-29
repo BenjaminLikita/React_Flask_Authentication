@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import axios from '../axios'
 
 
@@ -14,11 +14,13 @@ function Login() {
       const resp = await axios.post("//localhost:5000/login", {
         email, password
       })
+      if (resp){
+        window.location.href = "/"
+      }
 
-      window.location.href = "/"
     }
     catch(err){
-      if(err.response.status == 401){
+      if(err.response.status === 401){
         alert("Invalid Credentials")
       }
     }

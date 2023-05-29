@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 import Home from './Pages/Home'
 import ErrorPage from './Pages/ErrorPage';
@@ -19,8 +19,5 @@ function App() {
       </Router>
     </div>
   )
-}
-function Loading() {
-  return <h2>🌀 Loading...</h2>;
 }
 export default App

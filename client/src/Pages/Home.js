@@ -23,7 +23,9 @@ function Home() {
 
   const logOutUser = async () => {
     const resp = await axios.post("//localhost:5000/logout")
-    window.location.href = "/"
+    if (resp){
+      window.location.href = "/"
+    }
   }
 
 
